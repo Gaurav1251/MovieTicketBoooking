@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script src="js/jq.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+	
+	$("#btn").click(function (e) {
+		e.preventDefault();
+		
+		var name=$("#name").val();
+		var email=$("#email").val();
+		var msg=$("#msg").val();
+		
+		var body="name : "+name+'<br>'+"Email : "+email+'<br>'+"Message : "+msg;
+		/*  Email.send({
+		    SecureToken : "d9bdf522-86e2-48c2-9411-5513278c0722",
+		    
+		    To :'hackingmaster874@gmail.com',
+		    From :"gauravkondhalkar874@gmail.com",
+		    
+		    Subject : "This is the subject",
+		    Body : body
+		}).then(
+				message => alert("hi")
+		);  */
+		 Email.send({
+		    Host : "smtp25.elasticemail.com",
+		    Username : "gauravkondhalkar874@gmail.com",
+		    Password : "B82C2D048E6C58A9E78103AD4CB637F82000",
+		    To : 'hackingmaster874@gmail.com',
+		    From : "gauravkondhalkar874@gmail.com",
+		    Subject : "This is the subject",
+		    Body : body
+		}).then(
+		  message => alert("Message send successfully")
+		); 
+		console.log("hi")
+		
+	})
+	
+	
+})
+</script>
+</head>
+<body>
+
+<form action="">
+
+<table>
+<tr>
+<th>Name</th>
+<td> <input type="text" required="required" id="name"> </td>
+
+
+
+</tr>
+<tr>
+<th>Email :</th>
+<td> <input type="email" required="required" id="email"> </td>
+
+
+
+</tr>
+
+<tr>
+<th>Message :</th>
+<td> <textarea rows="2" cols="30" id="msg" ></textarea> </td>
+
+
+
+</tr>
+<tr> <th> <button id="btn">Send</button> </th>  </tr>
+</table>
+
+</form>
+
+</body>
+</html>

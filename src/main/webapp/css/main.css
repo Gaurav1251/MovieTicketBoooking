@@ -1,0 +1,354 @@
+@charset "ISO-8859-1";
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #f7f7f7;
+}
+
+.navbar {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+/*
+headeer top
+*/
+.topbar {
+	background-color: #212529;
+	padding: 0;
+}
+
+.topbar .container .row {
+	margin: -7px;
+	padding: 0;
+}
+
+.topbar .container .row .col-md-12 {
+	padding: 0;
+}
+
+.topbar p {
+	margin: 0;
+	display: inline-block;
+	font-size: 13px;
+	color: #f1f6ff;
+}
+
+.topbar p>i {
+	margin-right: 5px;
+}
+
+.topbar p:last-child {
+	text-align: right;
+}
+
+header .navbar {
+	margin-bottom: 0;
+}
+
+.topbar li.topbar {
+	display: inline;
+	padding-right: 18px;
+	line-height: 52px;
+	transition: all .3s linear;
+}
+
+.topbar li.topbar:hover {
+	color: #1bbde8;
+}
+
+.topbar ul.info i {
+	color: #131313;
+	font-style: normal;
+	margin-right: 8px;
+	display: inline-block;
+	position: relative;
+	top: 4px;
+}
+
+.topbar ul.info li {
+	float: right;
+	padding-left: 30px;
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 44px;
+}
+
+.topbar ul.info i span {
+	color: #aaa;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 50px;
+	padding-left: 18px;
+}
+
+ul.social-network {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.social-network li {
+	border: none;
+	margin: 0;
+}
+
+ul.social-network li i {
+	margin: 0;
+}
+
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+	border: 0px solid #2D2D2D;
+	padding: 5px 0 0;
+	width: 32px;
+	display: inline-block;
+	text-align: center;
+	height: 32px;
+	vertical-align: baseline;
+	color: #000;
+}
+
+ul.social-network {
+	list-style: none;
+	margin: 5px 0 10px -25px;
+	float: right;
+}
+
+.waves-effect {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	vertical-align: middle;
+	z-index: 1;
+	will-change: opacity, transform;
+	transition: .3s ease-out;
+	color: #fff;
+}
+
+a {
+	color: #0a0a0a;
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.bg-image-full {
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.bg-dark {
+	background-color: #222 !important;
+}
+
+.mx-background-top-linear {
+	background: -webkit-linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+	background: -webkit-linear-gradient(left, #54d400 48%, #1b1e21 48%);
+	background: linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+}
+.carousel-item {
+ 	/* border: 2px solid red; */
+ 	margin-top:50px;
+ 	width:100%;
+ 	height: 550px;
+ 	background-repeat: no-repeat;
+ 	background-position: center; 
+ 	background-size: cover;
+ 	background-color: gray;
+}
+
+.ticket {
+    position: relative; 
+    border: 5px solid linear-gradient(to right, #d40025, #dc5800, #cb9200, #9dc500, #08f208);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    padding: 7px 16px;
+    background-image: linear-gradient(to right, #d40025, #e1431a, #ea690b, #f08a00, #f2aa08);
+    
+}
+.ticket:before,
+.ticket:after{
+    height:90px;
+    width:45px;
+    content: '';
+    position: absolute;
+    top: 0.9em;
+    top: calc(0.5em - 1px);
+    height: 1.2em;
+    width: 16px;
+    border: 5px solid linear-gradient(to right, #d40025, #dc5800, #cb9200, #9dc500, #08f208);
+    background-color:#54d400; 
+}
+.ticket:before {
+    left: -2px;
+    border-radius: 0 1em 1em 0;
+    border-left-color: #54d400;
+}
+.ticket:after {
+    right: -2px;
+    border-radius: 1em 0 0 1em;
+    border-right-color: #54d400;
+}
+/*Movie Card View */
+.moviecontainer
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.movie-card {
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 315px;
+  margin: 0.5em;
+  border-radius: 10px;
+  display: inline-block;
+}
+.movie-header {
+  padding: 0;
+  margin: 0;
+  height: 300px;
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.movieimage {
+  background-size: cover;
+}
+
+
+.header-icon-container {
+  position: relative;
+}
+
+
+
+.header-icon {
+  width: 100%;
+  height: 367px;
+  line-height: 367px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 54px;
+  text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA;
+  opacity: .85;
+}
+
+.header-icon:hover {
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 74px;
+  text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity: 1;
+}
+
+
+.movie-card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.movie-content {
+  padding: 18px 18px 24px 18px;
+  margin: 0;
+}
+
+.movie-content-header, .movie-info {
+  display: table;
+  width: 100%;
+}
+
+.movie-title {
+  font-size: 24px;
+  margin: 0;
+  display: table-cell;
+}
+
+.imax-logo {
+  width: 50px;
+  height: 15px;
+  background: url("https://6a25bbd04bd33b8a843e-9626a8b6c7858057941524bfdad5f5b0.ssl.cf5.rackcdn.com/media_kit/3e27ede823afbf139c57f1c78a03c870.jpg") no-repeat;
+  background-size: contain;
+  display: table-cell;
+  float: right;
+  position: relative;
+  margin-top: 5px;
+}
+
+.movie-info {
+  margin-top: 1em;
+}
+
+.info-section {
+  display: table-cell;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-section:first-of-type {
+  text-align: left;
+}
+
+.info-section:last-of-type {
+  text-align: right;
+}
+
+.info-section label {
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: .5em;
+  font-size: 9px;
+}
+
+.info-section span {
+  font-weight: 700;
+  font-size: 11px;
+}
+
+
