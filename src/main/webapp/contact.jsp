@@ -54,10 +54,10 @@ function size(a){
 		
 		Email.send({
 		    Host : "smtp.elasticemail.com",
-		    Username : "gauravkondhalkar874@gmail.com",
-		    Password : "B82C2D048E6C58A9E78103AD4CB637F82000",
-		    To : 'gauravkondhalkar874@gmail.com',
-		    From : "gauravkondhalkar874@gmail.com",
+		    Username : "your mail",
+		    Password : "app password ",
+		    To : 'to',
+		    From : "from",
 		    Subject : "New Enquiry",
 		    Body : a
 		}).then(
