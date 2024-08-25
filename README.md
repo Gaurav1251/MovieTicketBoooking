@@ -23,7 +23,7 @@ Getting Started
 
     bash
 
-git clone https://github.com/yourusername/movieticketbooking.git
+git clone https://github.com/Gaurav1251/MovieTicketBoooking.git <br>
 cd movieticketbooking
 
 **Build the Project**
